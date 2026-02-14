@@ -1,0 +1,5 @@
+!pip install -q delta-spark pyspark lifetimes mlflow scikit-learn \
+               plotly kaleido faker scipy statsmodels duckdb \
+               pyarrow pandas numpy matplotlib seaborn
+
+print(' All packages installed!')

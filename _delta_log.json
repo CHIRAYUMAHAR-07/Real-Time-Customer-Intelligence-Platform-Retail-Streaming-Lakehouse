@@ -1,0 +1,42 @@
+{
+  "format": "delta",
+  "version": 1,
+  "table": "bronze.retail_events",
+  "partitioned_by": [
+    "event_year",
+    "event_month"
+  ],
+  "row_count": 200000,
+  "created_at": "2026-02-14T06:07:35.059159",
+  "schema": [
+    "event_id",
+    "kafka_topic",
+    "kafka_partition",
+    "kafka_offset",
+    "user_id",
+    "sku_id",
+    "category",
+    "brand",
+    "event_type",
+    "event_ts",
+    "event_date",
+    "event_year",
+    "event_month",
+    "event_dow",
+    "event_hour",
+    "price_usd",
+    "quantity",
+    "revenue_usd",
+    "is_mobile",
+    "country",
+    "flink_latency_ms",
+    "is_late_arrival",
+    "watermark_passed"
+  ],
+  "z_order_by": [
+    "user_id",
+    "event_ts"
+  ],
+  "retention_days": 30,
+  "time_travel": true
+}
